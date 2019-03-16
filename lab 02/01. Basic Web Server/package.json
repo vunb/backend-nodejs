@@ -1,0 +1,14 @@
+{
+  "name": "basic-web",
+  "version": "1.0.0",
+  "description": "Basic web server",
+  "main": "http-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vunb",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
