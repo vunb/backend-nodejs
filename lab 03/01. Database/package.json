@@ -1,0 +1,19 @@
+{
+  "name": "01.-database",
+  "version": "1.0.0",
+  "description": "Database project lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vunb",
+  "license": "MIT",
+  "dependencies": {
+    "@types/mysql": "^2.15.5",
+    "mongoose": "^5.4.19",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.3.23"
+  }
+}
