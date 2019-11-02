@@ -220,4 +220,5 @@ packages binary
 *.tt     binary
 
 # No text automatically
-src/assets/**/* -text
+slides/**/* -text
+*.url -text
