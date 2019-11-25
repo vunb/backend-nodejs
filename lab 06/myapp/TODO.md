@@ -7,5 +7,7 @@ Cho phép:
 3. Cho phép sửa, cập nhật mô tả công việc
 4. Cho phép xóa một công việc không thực hiện
 5. Cho phép đánh dấu trạng thái công việc hoàn thành
+6. Tìm kiếm các đầu công việc và hiển thị trạng thái của nó
+7. Thống kê các đầu việc hoàn thành, chưa hoàn thành.
 
 Ref: http://node-todos.herokuapp.com/
