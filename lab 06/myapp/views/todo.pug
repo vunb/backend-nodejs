@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Danh sách todo list
+  ul
+    each item in data
+      li= item.name
