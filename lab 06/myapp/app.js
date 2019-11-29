@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 
+var passportConfig = require('./config/passport');
 var startDbServerDev = require('./tasks/db-connection');
 var initDefaultData = require('./tasks/db-init');
 
@@ -41,8 +42,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(bodyParser({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')));
+
+// config passport before route
+passportConfig(app);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

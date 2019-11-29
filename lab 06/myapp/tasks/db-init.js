@@ -24,7 +24,8 @@ function initDefaultData() {
     {
       username: 'vunb',
       password: '1234',
-      active: true,
+      phone: '0987654321',
+      active: false,
     }
   ]);
 

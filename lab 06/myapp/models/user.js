@@ -10,7 +10,7 @@ var Schema = mongoose.Schema;
 const userSchema = new Schema({
   username: String,
   password: String,
-  phone: Boolean,
+  phone: String,
   active: Boolean,
 });
 
