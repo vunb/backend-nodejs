@@ -1,8 +1,11 @@
 const TodoService = require('../services/todo.service');
+const UserService = require('../services/user.service');
+
 const svTodo = new TodoService();
+const svUser = new UserService();
 
 function initDefaultData() {
-  return svTodo.create([
+  const vCreateTodos = svTodo.create([
     {
       name: 'Dựng khung dự án',
       description: 'Công việc đầu tiên',
@@ -15,7 +18,20 @@ function initDefaultData() {
       active: true,
       isDone: false
     },
-  ])
+  ]);
+
+  const vCreateUsers = svUser.create([
+    {
+      username: 'vunb',
+      password: '1234',
+      active: true,
+    }
+  ]);
+
+  return Promise.all([
+    vCreateTodos,
+    vCreateUsers
+  ]);
 }
 
 module.exports = initDefaultData;

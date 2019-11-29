@@ -12,6 +12,7 @@ const todoSchema = new Schema({
   description: String,
   isDone: Boolean,
   active: Boolean,
+  idUser: String,
 });
 
 /**
