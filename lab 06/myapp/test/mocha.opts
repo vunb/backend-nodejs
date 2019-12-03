@@ -1,0 +1,5 @@
+--delay
+--exit
+--reporter spec
+--require ./bin/www
+test/**/*.spec.js

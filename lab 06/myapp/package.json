@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "dev": "npm run start"
+    "dev": "npm run start",
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -21,6 +22,9 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "axios": "^0.19.0",
+    "mocha": "^6.2.2",
     "mongodb-memory-server": "^6.0.1"
   }
 }
